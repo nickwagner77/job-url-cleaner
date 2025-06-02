@@ -30,7 +30,7 @@ A web-based tool for cleaning and deduplicating job application URLs with profil
 
 1. Clone the repository
 ```bash
-git clone <repo-url>
+git clone https://github.com/nickwagner77/job-url-cleaner
 cd url-cleaner-app
 ```
 

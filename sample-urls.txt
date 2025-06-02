@@ -1,0 +1,15 @@
+https://jobs.lever.co/company/position?utm_source=linkedin&utm_medium=social&utm_campaign=hiring
+https://greenhouse.io/company/jobs/123456?gh_src=indeed&gh_jid=789
+https://workday.com/company/job/software-engineer?source=glassdoor&ref=career-page
+https://jobs.smartrecruiters.com/company/position?trid=12345&sid=abcdef
+https://company.bamboohr.com/jobs/view.php?id=123&source=linkedin&medium=referral
+https://apply.workable.com/company/j/ABC123/?utm_source=google&utm_medium=cpc
+https://boards.greenhouse.io/company/jobs/456789?t=abc123&source=company_website
+https://company.lever.co/position-title?lever-source=LinkedInJobs&lever-origin=applied
+https://jobs.ashbyhq.com/company/position?utm_source=indeed&utm_medium=organic
+https://company.workday.com/en-us/job/location/job-title/JR123456?source=linkedin
+
+# OneTab exported format example:
+https://example-company.greenhouse.io/jobs/123456?gh_src=linkedin | Software Engineer - Example Company
+https://jobs.lever.co/example/position?utm_source=indeed | Frontend Developer - Example
+https://workday.example.com/job/engineer?source=glassdoor | Backend Engineer - Example Corp 

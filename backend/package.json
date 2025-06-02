@@ -1,0 +1,30 @@
+{
+  "name": "url-cleaner-backend",
+  "version": "1.0.0",
+  "description": "Backend for URL Cleaner App",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.16",
+    "@types/express": "^4.17.21",
+    "@types/multer": "^1.4.11",
+    "@types/node": "^20.9.0",
+    "prisma": "^5.6.0",
+    "tsx": "^4.4.0",
+    "typescript": "^5.2.2"
+  }
+} 

@@ -1,0 +1,46 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Profile {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  imports   Import[]
+  urls      Url[]    // Keep temporarily for migration
+
+  @@map("profiles")
+}
+
+model Import {
+  id        String   @id @default(cuid())
+  profileId String   @map("profile_id")
+  alias     String
+  createdAt DateTime @default(now()) @map("created_at")
+  urls      Url[]
+  
+  profile Profile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+
+  @@map("imports")
+}
+
+model Url {
+  id          String   @id @default(cuid())
+  profileId   String   @map("profile_id")     // Keep temporarily
+  importId    String?  @map("import_id")      // Make optional for migration
+  originalUrl String   @map("original_url")
+  cleanedUrl  String   @map("cleaned_url")
+  domain      String
+  isDuplicate Boolean  @default(false) @map("is_duplicate")
+  createdAt   DateTime @default(now()) @map("created_at")
+  
+  profile Profile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  import  Import? @relation(fields: [importId], references: [id], onDelete: Cascade)
+
+  @@map("urls")
+}

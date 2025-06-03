@@ -42,8 +42,7 @@ npm run install:all
 3. Set up environment variables
 ```bash
 # Copy environment files
-cp backend/.env.example backend/.env
-cp frontend/.env.example frontend/.env
+cp backend/env.example backend/.env
 ```
 
 4. Configure your PostgreSQL database URL in `backend/.env`
